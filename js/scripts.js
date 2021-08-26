@@ -1,9 +1,14 @@
 function minuscoleMaiuscole(a, b) {
     minA = a.toLowerCase();
     minB = b.toLowerCase();
-    if (minA < minB){ return -1; }
-    else if (minA > minB) { return 1;}
-    else { return 0; }
+    if (minA < minB) {
+        return -1;
+    }
+    else if (minA > minB) {
+        return 1; 
+    }
+    else 
+        return 0; 
 }
 
 
