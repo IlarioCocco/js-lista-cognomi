@@ -36,4 +36,4 @@ for (var i= 1; i< listaCognomi.length; i++){
     }
 } 
 
-// document.write(listaCognomi[i] + "<br>");
+document.write(listaCognomi + "<br>");
