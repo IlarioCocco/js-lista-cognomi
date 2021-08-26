@@ -18,7 +18,7 @@ console.log("Cognome:" + " " + cognome);
 alert("Cognome:" + " " + cognome);
 
 // 2 Inseriscilo in un array con altri cognomi:
-var listaCognomi= ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
+var listaCognomi= ["Bianchi", "Neri", "Ruggeri", "Verdi", "Gialli"];
 listaCognomi.push(cognome);
 console.log(listaCognomi);
 alert("Lista aggiornata :" +  " " + listaCognomi);
