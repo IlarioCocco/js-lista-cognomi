@@ -2,13 +2,13 @@ function minuscoleMaiuscole(a, b) {
     minA = a.toLowerCase();
     minB = b.toLowerCase();
     if (minA < minB) {
-        return -1;
+        {return -1;}
     }
     else if (minA > minB) {
-        return 1; 
+        {return 1;}
     }
     else 
-        return 0; 
+        {return 0;} 
 }
 
 
@@ -18,20 +18,22 @@ console.log("Cognome:" + " " + cognome);
 alert("Cognome:" + " " + cognome);
 
 // 2 Inseriscilo in un array con altri cognomi:
-var ListaCognomi= ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
-ListaCognomi.push(cognome);
-console.log(ListaCognomi);
-alert("Lista aggiornata :" +  " " + ListaCognomi);
+var listaCognomi= ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
+listaCognomi.push(cognome);
+console.log(listaCognomi);
+alert("Lista aggiornata :" +  " " + listaCognomi);
 
 // 3 Stampa la lista ordinata in sequenza Alfabetica:
-ListaCognomi.sort(minuscoleMaiuscole);
-console.log(ListaCognomi);
-alert("Lista in Ord. Alfabetico :" + " " + ListaCognomi);
+listaCognomi.sort(minuscoleMaiuscole);
+console.log(listaCognomi);
+alert("Lista in Ord. Alfabetico :" + " " + listaCognomi);
 
 //  4 Scrivi anche la posizione "umana" partendo da 1, 
 //  della lista in cui il nuovo utente si trova
-for (var i= 1; i< ListaCognomi.length; i++){
-    console.log(cognome);
-    document.write(ListaCognomi[i] + "<br>");
-}
+for (var i= 1; i< listaCognomi.length; i++){
+    if(listaCognomi[i] == cognome){
+    console.log("la posizione di"+ " " + cognome + " " + "è:" + " " + [i]);
+    }
+} 
 
+// document.write(listaCognomi[i] + "<br>");
